@@ -6,3 +6,236 @@ html{
     width: 827px;
     height: 500px;
 }
+body{
+    margin:0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,p,span,small{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+a{
+    color: #119ad2;
+    text-decoration: none;
+}
+a:active{
+    background-color: rgba(31,174,233,0.5)!important;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom,#303030,#404040);
+    width: 827px;
+    height: 75px;
+    line-height: 75px;
+}
+.content_container{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efefef;
+    width: 827px;
+    height: 425px;
+    box-shadow: inset 0 5px 15px -7px;
+}
+.container-header{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: relative;
+}
+.container-header h2{
+    margin: 0;
+    font-size: 1.25em;
+    color: #199ad2;
+    display: inline-block;
+    margin: 0 0 0 36px;
+}
+.username_title{
+    color: #f5f5f5;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    right: 50px;
+}
+.middle_container{
+    width: 727px;
+    height: 375px;
+    border: 1px solid #e8e8e8;
+    background-color: #f5f5f5;
+    margin: 25px 50px;
+}
+.side_container{
+    display: inline-block;
+    width: 353px;
+}
+.left-side_container{
+    margin: 25px 10px 25px 50px;
+    float: left;
+}
+.right-side_container{
+    margin: 24px 49px 24px 9px;
+    background-color: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    width: 323px;
+    max-height: 323px;
+}
+.content-middle_container{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.servers_list li{
+    margin: 1px auto;
+    display: block;
+}
+.servers_list a{
+    width: calc(100% - 50px);
+    height: 45px;
+    line-height: 45px;
+    background-color: #119ad2;
+    color: #f5f5f5;
+    display: block;
+    padding: 0 0 0 50px;
+    font-size: 1.25em;
+    position: relative;
+}
+.servers_list span{
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.servers_list small{
+    font-size: 0.5em;
+    font-weight: 400;
+}
+.head_menu{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.head_menu li{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.left-side_menu{
+    color: #119ad2;
+}
+.left-side_menu a{
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 15px 0;
+    color: #119ad2;
+    text-decoration: none;
+}
+.left-side_menu a:hover>.icon{
+    opacity: 1;
+}
+.left-side_menu a:hover{
+    opacity: 1;
+    background-color: #119ad2;
+    color: #f5f5f5;
+}
+.left-side_menu span{
+    margin: 0 0 0 26px;
+}
+.left-side_menu .icon{
+    position: relative;
+    top: 5px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    opacity: 0;
+}
+.active-side_menu{
+    background-color: #119ad2;
+}
+.active-side_menu a{
+    color: #f5f5f5;
+}
+.active-side_menu .icon{
+    opacity: 1;
+}
+.form-element{
+    display: block;
+    margin: 10px 0;
+    color: #3e3e3e;
+}
+.form-button{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 35px;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.fill-button{
+    color: #f5f5f5;
+    background-color: #119ad2;
+    margin-right: 5px;
+}
+.login_container input{
+    width: calc(100% - 10px);
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #3e3e3e;
+    color: #3e3e3e;
+    background-color: #f5f5f5;
+    outline: none;
+    font-size: 1em;
+    padding: 5px;
+    margin: 0 0 25px 0;
+    font-family: sans-serif;
+}
+.short-stats li{
+    width: calc(50% - 24px);
+    padding: 10px;
+    margin: 2px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    outline: 1px solid #e8e8e8;
+    outline-offset: -1px;
+    color: #777;
+    text-align: center;
+}
+.short-stats li:hover{
+    background-color: #e8e8e8;
+    cursor: default;
+}
+.short-stats span{
+    display: block;
+    color: #333;
+    font-size: 1.75em;
+}
+.back-icon{
+    position: relative;
+    top: 5px;
+    left: 15px;
+    color: #404040;
+    cursor: pointer;
+}
+.bottom-border{
+    border-bottom: 3px solid #119ad2;
+}
+#selectel-logo{
+    background-image: url('../img/selectel_logo.png');
+    width: 112px;
+    height: 24px;
+    margin: 25px 0 0 50px;
+    display: inline-block;
+}
