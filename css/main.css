@@ -11,13 +11,21 @@ body{
     font-family: sans-serif;
     font-size: 16px;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,p,span,small{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 a{
     color: #119ad2;
     text-decoration: none;
-    transition: 0.25s;
 }
 a:active{
-    background-color: rgba(31,174,233,0.5);
+    background-color: rgba(31,174,233,0.5)!important;
 }
 .header{
     position: absolute;
@@ -37,7 +45,7 @@ a:active{
     height: 425px;
 }
 .username_title{
-    color: #ffffff;
+    color: #f5f5f5;
     font-size: 1.5em;
     font-weight: bold;
     position: absolute;
@@ -60,9 +68,6 @@ a:active{
     max-height: 323px;
 }
 .left-side_menu{
-    margin: 0;
-    padding: 0;
-    list-style: none;
     color: #119ad2;
 }
 .left-side_menu a{
@@ -71,10 +76,17 @@ a:active{
     height: 35px;
     line-height: 35px;
     margin: 0 0 15px 0;
-    outline: 1px solid #119ad2;
-    outline-offset: -1px;
     color: #119ad2;
     text-decoration: none;
+    transition: 0.25s;
+}
+.left-side_menu a:hover>.icon{
+    opacity: 1;
+}
+.left-side_menu a:hover{
+    opacity: 1;
+    background-color: #119ad2;
+    color: #f5f5f5;
 }
 .left-side_menu span{
     margin: 0 0 0 26px;
@@ -110,9 +122,10 @@ a:active{
     width: 150px;
     height: 35px;
     cursor: pointer;
+    transition: 0.25s;
 }
 .fill-button{
-    color: #fff;
+    color: #f5f5f5;
     background-color: #119ad2;
     margin-right: 5px;
 }
@@ -128,6 +141,27 @@ a:active{
     padding: 5px;
     margin: 0 0 25px 0;
     font-family: sans-serif;
+}
+.short-stats li{
+    width: calc(50% - 24px);
+    padding: 10px;
+    margin: 2px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    outline: 1px solid #e8e8e8;
+    outline-offset: -1px;
+    color: #777;
+    text-align: center;
+}
+.short-stats li:hover{
+    background-color: #e8e8e8;
+    cursor: default;
+}
+.short-stats span{
+    display: block;
+    color: #333;
+    font-size: 1.75em;
 }
 #selectel-logo{
     background-image: url('../img/selectel_logo.png');
