@@ -43,6 +43,20 @@ a:active{
     background-color: #efefef;
     width: 827px;
     height: 425px;
+    box-shadow: inset 0 5px 15px -7px;
+}
+.container-header{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: relative;
+}
+.container-header h2{
+    margin: 0;
+    font-size: 1.25em;
+    color: #199ad2;
+    display: inline-block;
+    margin: 0 0 0 36px;
 }
 .username_title{
     color: #f5f5f5;
@@ -50,6 +64,13 @@ a:active{
     font-weight: bold;
     position: absolute;
     right: 50px;
+}
+.middle_container{
+    width: 727px;
+    height: 375px;
+    border: 1px solid #e8e8e8;
+    background-color: #f5f5f5;
+    margin: 25px 50px;
 }
 .side_container{
     display: inline-block;
@@ -67,6 +88,45 @@ a:active{
     width: 323px;
     max-height: 323px;
 }
+.content-middle_container{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.servers_list li{
+    margin: 1px auto;
+    display: block;
+}
+.servers_list a{
+    width: calc(100% - 50px);
+    height: 45px;
+    line-height: 45px;
+    background-color: #119ad2;
+    color: #f5f5f5;
+    display: block;
+    padding: 0 0 0 50px;
+    font-size: 1.25em;
+    position: relative;
+}
+.servers_list span{
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.servers_list small{
+    font-size: 0.5em;
+    font-weight: 400;
+}
+.head_menu{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.head_menu li{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
 .left-side_menu{
     color: #119ad2;
 }
@@ -78,7 +138,6 @@ a:active{
     margin: 0 0 15px 0;
     color: #119ad2;
     text-decoration: none;
-    transition: 0.25s;
 }
 .left-side_menu a:hover>.icon{
     opacity: 1;
@@ -162,6 +221,16 @@ a:active{
     display: block;
     color: #333;
     font-size: 1.75em;
+}
+.back-icon{
+    position: relative;
+    top: 5px;
+    left: 15px;
+    color: #404040;
+    cursor: pointer;
+}
+.bottom-border{
+    border-bottom: 3px solid #119ad2;
 }
 #selectel-logo{
     background-image: url('../img/selectel_logo.png');
